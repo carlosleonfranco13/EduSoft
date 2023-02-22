@@ -9,7 +9,22 @@
   --primary-whithe: #ffffff;
   --secondary-yellow: #e7ad45;
   --secondary-lightblue: #77d1fc;
+  /*Font-size*/
+  --font-1: "Roboto", san serif;
+  /*Font-size*/
+  --h1-mobile-size: 2.4rem;
+  --h2-mobile-size: 2rem; 
+  --h3-mobile-size: 1.6rem;
+  --h4-mobile-size: 1.6rem;
+  --p-mobile-size: 1.4rem;
+  /*Font-weight*/
+  --h1-mobile-w: bold;
+  --h2-mobile-w: bold;
+  --h3-mobile-w: bold;
+  --h4-mobile-w: normal;
+  --p-mobile-w: normal;
 }
+
 html {
   font-size: 62.5%;
 }
