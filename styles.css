@@ -1,3 +1,14 @@
+/*
+
+Convenciones para agregar estilos
+
+1. Posicionamiento (static, absolute, relative, fixed, sticky)
+2. Modelo de Caja (margin, border, padding, content)
+3. Tipografía (tipos, tamaño de fuente...)
+4. Visuales ("Shadow-box", "border-radius", efectos visuales)
+5. Otros (reglas CSS y más)
+
+*/
 * {
   margin: 0;
   padding: 0;
@@ -5,12 +16,12 @@
 }
 :root {
   /*Colors*/
-  --primary-darkblue: #15255b;
-  --primary-whithe: #ffffff;
-  --secondary-yellow: #e7ad45;
-  --secondary-lightblue: #77d1fc;
-  /*Font-size*/
-  --font-1: "Roboto", san serif;
+  --color-primary-1: #15255b;
+  --color-primary-2: #ffffff;
+  --color-secondary: #e7ad45;
+  --color-complementary: #77d1fc;
+  /*Font*/
+  --font-1: 'Roboto', sans-serif;
   /*Font-size*/
   --h1-mobile-size: 2.4rem;
   --h2-mobile-size: 2rem; 
@@ -18,13 +29,11 @@
   --h4-mobile-size: 1.6rem;
   --p-mobile-size: 1.4rem;
   /*Font-weight*/
-  --h1-mobile-w: bold;
-  --h2-mobile-w: bold;
-  --h3-mobile-w: bold;
-  --h4-mobile-w: normal;
-  --p-mobile-w: normal;
+  --fontWeight-1: bold;
+  --fontWeight-2: normal;
 }
 
 html {
   font-size: 62.5%;
 }
+
