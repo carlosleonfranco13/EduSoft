@@ -1,2 +1,2 @@
 # EduSoft
-Landing page de escuela de Tecnologías de la Información
+Landing Page de escuela de Tecnologías de la Información
