@@ -35,5 +35,6 @@ Convenciones para agregar estilos
 
 html {
   font-size: 62.5%;
+  font-family: var(--font-1);
 }
 
