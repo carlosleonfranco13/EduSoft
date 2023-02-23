@@ -117,3 +117,19 @@ hero .banner-asesoria{
 hero .banner-asesoria p{
   color: var(--color-primary-1);
 }
+
+.form-container-principle{
+  background-color: var(--color-primary-1);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+.form-title{
+  text-align: center;
+}
+.form-title h4{
+  color: var(--color-primary-2);
+  font-size: var(--h3-mobile-size);
+  font-weight: var(--fontWeight-bold);
+}
