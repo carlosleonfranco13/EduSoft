@@ -111,6 +111,8 @@ hero .banner-features p{
 }
 hero .banner-asesoria{
   background-color: var(--color-secondary);
+  padding: 8px 0;
+  opacity: 95%;
 }
 hero .banner-asesoria p{
   color: var(--color-primary-1);
