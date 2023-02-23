@@ -56,6 +56,9 @@ header .menu, .login, .menu-bar{
   background-image: url(/assets/Students.jpg);
   background-size: cover;
   height: 404px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 hero .banner-title{
   text-align: center;
@@ -65,14 +68,50 @@ hero .banner-title{
   font-weight: var(--fontWeight-bold);
   color: var(--color-secondary);
   text-shadow: 2px 2px 2px var(--color-primary-1);
+  padding-top: 8px;
 }
 .hero-container h2{
   font-size: var(--h2-mobile-size);
   color: var(--color-primary-2);
   text-shadow: 2px 2px 2px var(--color-primary-1);
+  padding-top: 8px;
+}
+.hero-container hr{
+  border: none;
+  border-top: 3px solid var(--color-secondary);
+  border-radius: 3px;
+  width: 70%;
+  margin: 8px auto;  
 }
 .hero-container h3{
   font-size: var(--h3-mobile-size);
   color: var(--color-complementary);
   text-shadow: 2px 2px 2px var(--color-primary-1);
+}
+hero .banner-features{
+  text-align: center;
+}
+hero .banner-features span{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-primary-1);
+  opacity: 95%;
+  padding: 4px 0;
+}
+hero .banner-features i{
+  color: var(--color-secondary);
+  font-size: 2.4rem;
+  
+}
+hero .banner-features p{
+  color: var(--color-primary-2);
+  font-size: var(--h3-mobile-size);
+  font-weight: var(--fontWeight-bold);
+}
+hero .banner-asesoria{
+  background-color: var(--color-secondary);
+}
+hero .banner-asesoria p{
+  color: var(--color-primary-1);
 }
