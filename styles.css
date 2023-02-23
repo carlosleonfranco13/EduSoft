@@ -97,7 +97,7 @@ hero .banner-features span{
   justify-content: center;
   align-items: center;
   background-color: var(--color-primary-1);
-  opacity: 95%;
+  opacity: 75%;
   padding: 4px 0;
 }
 hero .banner-features i{
@@ -113,7 +113,7 @@ hero .banner-features p{
 hero .banner-asesoria{
   background-color: var(--color-secondary);
   padding: 8px 0;
-  opacity: 95%;
+  opacity: 90%;
 }
 hero .banner-asesoria p{
   color: var(--color-primary-1);
@@ -267,4 +267,50 @@ hero .banner-asesoria p{
 .cards_container .img6{
   background-image: url(/assets/AppsMóviles.jpg);
   border-radius: 16px 16px 0 0;
+}
+
+footer{
+  max-width: 1024px;
+}
+footer .contact-politics{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+footer .contact{
+  background-color: var(--color-primary-1);
+  width: 100%;
+}
+footer .phones{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 0;
+}
+footer i{
+  color: var(--color-secondary);
+  font-size: var(--h1-mobile-size);
+}
+footer p{
+  color: var(--color-primary-2);
+  font-size: var(--p-mobile-size);
+  padding: 0 8px;
+}
+footer .socialmedia{
+  text-align: center;
+}
+footer .socialmedia i{
+  padding: 0px 16px;
+  padding-bottom: 16px;
+}
+footer .politics{
+  background-color: var(--color-secondary);
+  width: 100%;
+  text-align: center;
+  padding: 8px 0;
+}
+footer .politics p{
+  font-size: var(--p-mobile-size);
+  color: var(--color-primary-1);
+  padding: 8px 0;
 }
