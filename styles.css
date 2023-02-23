@@ -133,3 +133,19 @@ hero .banner-asesoria p{
   font-size: var(--h3-mobile-size);
   font-weight: var(--fontWeight-bold);
 }
+.form-container{
+  width: 70%;
+}
+.form-group{
+  padding: 8px 0;
+}
+.form-group input{
+  height: auto;
+  width: 100%;
+  border: none;
+  color: gray;
+  font-size: var(--p-mobile-size);
+}
+.form-group placeholder{
+  padding: 8px 0;
+}
