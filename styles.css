@@ -29,8 +29,8 @@ Convenciones para agregar estilos
   --h4-mobile-size: 1.6rem;
   --p-mobile-size: 1.4rem;
   /*Font-weight*/
-  --fontWeight-1: bold;
-  --fontWeight-2: normal;
+  --fontWeight-bold: bold;
+  --fontWeight-normal: normal;
 }
 
 html {
@@ -38,3 +38,41 @@ html {
   font-family: var(--font-1);
 }
 
+header{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  padding: 4px 0;
+  min-width: 320px;
+}
+header .logo{
+  height: 50px;
+}
+header .menu, .login, .menu-bar{
+  display: none;
+}
+
+.hero-container{
+  background-image: url(/assets/Students.jpg);
+  background-size: cover;
+  height: 404px;
+}
+hero .banner-title{
+  text-align: center;
+}
+.hero-container h1{
+  font-size: var(--h1-mobile-size);
+  font-weight: var(--fontWeight-bold);
+  color: var(--color-secondary);
+  text-shadow: 2px 2px 2px var(--color-primary-1);
+}
+.hero-container h2{
+  font-size: var(--h2-mobile-size);
+  color: var(--color-primary-2);
+  text-shadow: 2px 2px 2px var(--color-primary-1);
+}
+.hero-container h3{
+  font-size: var(--h3-mobile-size);
+  color: var(--color-complementary);
+  text-shadow: 2px 2px 2px var(--color-primary-1);
+}
