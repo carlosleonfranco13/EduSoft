@@ -1,0 +1,49 @@
+body{
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+header .logo{
+    height: 70px;
+}
+
+.hero-container{
+    width: 60.7%;
+    height: 404px;
+    display: inline-flex;
+}
+
+form{
+    width: 39%;
+    display: inline-flex;
+    height: 404px;
+    align-self: center;
+}
+
+.form-container-principle{
+    display: flex;
+    justify-content: space-between;
+    box-shadow: -3px 1px 4px var(--color-primary-1);
+}
+
+.content-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.content__icon-text i {
+    font-size: 48px;
+}
+.content__icon-text h3 {
+    font-size: 2.4rem;
+    font-weight: var(--fontWeight-bold);
+    text-align: left;
+}
+.content-container p {
+    font-size: 1.8rem;
+    padding-bottom: 16px;
+    line-height: 1.5;
+}
+.content-container button {
+    font-size: 1.8rem;    
+}

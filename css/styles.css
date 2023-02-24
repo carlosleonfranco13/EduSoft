@@ -1,0 +1,338 @@
+/*
+
+Convenciones para agregar estilos
+
+1. Posicionamiento (static, absolute, relative, fixed, sticky)
+2. Modelo de Caja (margin, border, padding, content)
+3. Tipografía (tipos, tamaño de fuente...)
+4. Visuales ("Shadow-box", "border-radius", efectos visuales)
+5. Otros (reglas CSS y más)
+
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  /*Colors*/
+  --color-primary-1: #15255b;
+  --color-primary-2: #ffffff;
+  --color-secondary: #e7ad45;
+  --color-complementary: #77d1fc;
+  --color-complementary-2: #a3a3a3;  
+  /*Font*/
+  --font-1: 'Roboto', sans-serif;
+  /*Font-size*/
+  --h1-mobile-size: 2.4rem;
+  --h2-mobile-size: 2rem; 
+  --h3-mobile-size: 1.6rem;
+  --h4-mobile-size: 1.6rem;
+  --p-mobile-size: 1.4rem;
+  /*Font-weight*/
+  --fontWeight-bold: bold;
+  --fontWeight-normal: normal;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: var(--font-1);
+}
+
+header{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  padding: 4px 0;
+  min-width: 320px;
+}
+header .logo{
+  height: 50px;
+}
+header .menu, .login, .menu-bar{
+  display: none;
+}
+
+.hero-container{
+  background-image: url(/assets/Students.jpg);
+  background-size: cover;
+  height: 404px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+hero .banner-title{
+  text-align: center;
+}
+.hero-container h1{
+  font-size: var(--h1-mobile-size);
+  font-weight: var(--fontWeight-bold);
+  color: var(--color-secondary);
+  text-shadow: 2px 2px 2px var(--color-primary-1);
+  padding-top: 8px;
+}
+.hero-container h2{
+  font-size: var(--h2-mobile-size);
+  color: var(--color-primary-2);
+  text-shadow: 2px 2px 2px var(--color-primary-1);
+  padding-top: 8px;
+}
+.hero-container hr{
+  border: none;
+  border-top: 3px solid var(--color-secondary);
+  border-radius: 3px;
+  width: 70%;
+  margin: 8px auto;  
+}
+.hero-container h3{
+  font-size: var(--h3-mobile-size);
+  color: var(--color-complementary);
+  text-shadow: 2px 2px 2px var(--color-primary-1);
+}
+hero .banner-features{
+  text-align: center;
+}
+hero .banner-features span{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-primary-1);
+  opacity: 75%;
+  padding: 4px 0;
+}
+hero .banner-features i{
+  color: var(--color-secondary);
+  font-size: 2.4rem;
+  
+}
+hero .banner-features p{
+  color: var(--color-primary-2);
+  font-size: var(--h3-mobile-size);
+  font-weight: var(--fontWeight-bold);
+}
+hero .banner-asesoria{
+  background-color: var(--color-secondary);
+  padding: 8px 0;
+  opacity: 90%;
+}
+hero .banner-asesoria p{
+  color: var(--color-primary-1);
+}
+
+.form-container-principle{
+  background-color: var(--color-primary-1);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+.form-title{
+  text-align: center;
+  padding: 16px 0;
+}
+.form-title h4{
+  color: var(--color-primary-2);
+  font-size: var(--h3-mobile-size);
+  font-weight: var(--fontWeight-bold);
+}
+.form-container{
+  width: 70%;
+}
+.form-group{
+  padding: 8px 0;
+}
+.form-group input{
+  width: 100%;
+  border: none;
+  color: var(--color-primary-1);
+  font-size: var(--p-mobile-size);
+  padding: 8px 8px;
+  border-radius: 8px;
+  outline: none;
+  text-align: center;
+  text-transform: uppercase;
+}
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+.form-group ::placeholder{
+  color: var(--color-complementary-2);
+  text-align: center;
+  text-transform:capitalize;
+}
+.form-btn{
+  padding: 16px 0;
+}
+.form-btn input{
+  padding: 4px 8px;
+  border-radius: 4px;
+  border: none;
+  background-color: var(--color-secondary);
+  color: var(--color-primary-1);
+  font-size: var(--p-mobile-size);
+  font-weight: var(--fontWeight-bold);
+}
+
+.content-container{
+  background-color: var(--color-complementary);
+  text-align: center;
+  padding: 16px 0;
+}
+.content__icon-text{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding-bottom: 16px;
+}
+.content__icon-text i{
+  font-size: 32px;
+}
+.content__icon-text h3{
+  font-size: var(--h3-mobile-size);
+  font-weight: var(--fontWeight-bold);
+  text-align: left;
+}
+.content-container p{
+  font-size: var(--p-mobile-size);
+  padding-bottom: 16px;
+}
+.content-container button{
+  background-color: var(--color-primary-1);
+  border: none;
+  padding: 4px 8px;
+  border-radius: 4px;
+  color: var(--color-secondary);
+  font-size: var(--p-mobile-size);
+  font-weight: var(--fontWeight-bold);
+}
+
+.section_cards{
+  overflow-x: scroll;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x proximity;
+}
+.section_cards .cards_container{
+  display: flex;
+  align-items: center;
+  padding: 16px 0;
+}
+.cards_container .card{
+  background-color: var(--color-primary-1);
+  scroll-snap-align: center;
+  min-width: 235px;
+  border-radius: 16px;
+  height: 330px;
+  margin: 0px 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.cards_container img{
+  height: 40%;
+  width: 100%;
+  background-size: cover;
+  background-position: center center;
+}
+.cards_container h4{
+  font-size: var(--h4-mobile-size);
+  font-weight: var(--fontWeight-bold);
+  color: var(--color-primary-2);
+  padding: 8px 0;
+}
+.cards_container p{
+  font-size: var(--p-mobile-size);
+  color: var(--color-primary-2);
+  padding-bottom: 16px;
+}
+.cards_container button{
+  background-color: var(--color-secondary);
+  border: none;
+  font-size: var(--p-mobile-size);
+  font-weight: var(--fontWeight-bold);
+  margin-bottom: 16px;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+.cards_container .img1{
+  background-image: url(/assets/AnálisisDatos.jpg);
+  border-radius: 16px 16px 0 0;
+}
+.cards_container .img2{
+  background-image: url(/assets/Designer.jpg);
+  border-radius: 16px 16px 0 0;
+}
+.cards_container .img3{
+  background-image: url(/assets/diseñoUi.jpg);
+  border-radius: 16px 16px 0 0;
+}
+.cards_container .img4{
+  background-image: url(/assets/SeguridadInformática.jpg);
+  border-radius: 16px 16px 0 0;
+}
+.cards_container .img5{
+  background-image: url(/assets/iseñoUx.jpg);
+  border-radius: 16px 16px 0 0;
+}
+.cards_container .img6{
+  background-image: url(/assets/AppsMóviles.jpg);
+  border-radius: 16px 16px 0 0;
+}
+
+footer{
+  max-width: 1024px;
+}
+footer .contact-politics{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+footer .contact{
+  background-color: var(--color-primary-1);
+  width: 100%;
+}
+footer .phones{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 0;
+}
+footer i{
+  color: var(--color-secondary);
+  font-size: var(--h1-mobile-size);
+}
+footer p{
+  color: var(--color-primary-2);
+  font-size: var(--p-mobile-size);
+  padding: 0 8px;
+}
+footer .socialmedia{
+  text-align: center;
+}
+footer .socialmedia i{
+  padding: 0px 16px;
+  padding-bottom: 16px;
+}
+footer .politics{
+  background-color: var(--color-secondary);
+  width: 100%;
+  text-align: center;
+  padding: 8px 0;
+}
+footer .politics p{
+  font-size: var(--p-mobile-size);
+  color: var(--color-primary-1);
+  padding: 8px 0;
+}
+footer .copyright{
+  background-color: var(--color-complementary);
+  text-align: center;
+  font-size: var(--p-mobile-size);
+  color: var(--color-primary-1);
+  padding: 8px 0;
+}
