@@ -142,7 +142,6 @@ hero .banner-asesoria p{
   padding: 8px 0;
 }
 .form-group input{
-  height: auto;
   width: 100%;
   border: none;
   color: var(--color-primary-1);
@@ -150,9 +149,20 @@ hero .banner-asesoria p{
   padding: 8px 8px;
   border-radius: 8px;
   outline: none;
+  text-align: center;
+}
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
 }
 .form-group ::placeholder{
   color: var(--color-complementary-2);
+  text-align: center;
 }
 .form-btn{
   padding: 16px 0;
