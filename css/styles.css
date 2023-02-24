@@ -150,19 +150,20 @@ hero .banner-asesoria p{
   border-radius: 8px;
   outline: none;
   text-align: center;
+  text-transform: uppercase;
 }
 input[type="number"]::-webkit-outer-spin-button,
 input[type="number"]::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
-
 input[type="number"] {
   -moz-appearance: textfield;
 }
 .form-group ::placeholder{
   color: var(--color-complementary-2);
   text-align: center;
+  text-transform:capitalize;
 }
 .form-btn{
   padding: 16px 0;
